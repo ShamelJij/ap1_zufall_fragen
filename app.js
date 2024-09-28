@@ -94,7 +94,7 @@ function performSearch(searchTerm) {
         searchResultDiv.innerHTML = '<p>No matching questions found.</p>';
     } else {
         // Display number of matches found
-        searchResultDiv.innerHTML = `<p>Found ${filteredQuestions.length} matching questions:</p>`;
+        searchResultDiv.innerHTML = `<p>${filteredQuestions.length} Fragen gefunden:</p>`;
 
         // Create cards for each filtered question
         filteredQuestions.forEach(question => {

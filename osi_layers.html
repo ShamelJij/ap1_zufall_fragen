@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI Model Layers</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-2">OSI</h1>
+        <table class="table table-striped table-bordered table-responsive">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Verwendete Protokolle</th>
+                    <th scope="col">Kopplungselemente</th>
+                    <th scope="col">Mögliche Fehler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Anwendung</td>
+                    <td>SMTP, <strong class="text-primary">DNS</strong>, HTTP, HTTPS, <strong class="text-danger">DHCP</strong>, FTP, POP3, SNMP, NNTP, Telnet, DNS, SSH, REST, SOAP, VNC, RDP</td>
+                    <td rowspan="4">Gateway, Content-Switch, Proxy, Layer-4-7-Switch</td>
+                    <td rowspan="4">Anwendungsfehler, Authentifizierungsprobleme</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Darstellung</td>
+                    <td>MPEG, ASCH, SSL, TLS, ASCII to EBCDIC, ASCII to UTF-8</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Sitzung</td>
+                    <td>NetBIOS, SAP, TFTP, RCP</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Transport</td>
+                    <td>TCP, UDP, SPX, NetBEUI, <strong class="text-danger">DHCP</strong></td>
+                    <td rowspan="4">Transportfehler, Verbindungsabbrüche</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Vermittlung</td>
+                    <td><strong class="text-danger">DHCP</strong>, IPV4, IPV6, <strong class="text-primary">DNS</strong>, RIP,
+                        CIDR, ICMP, <strong class="text-success">ARP</strong>, IPsec, GRE, OSPF, BGP, QoS, NAT, MPLS, T.70,
+                        T.90, X.25</td>
+                    <td>Router, Layer-3-Switch, Subnetting, Subnetmask, Network Layer Firewalls</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Sicherung</td>
+                    <td>LLC/MAC, VLAN, IEEE 802.11 (WLAN), 802.11a, 802.11b, 802.11g, 802.11n, 802.11ac, 802.11ax (Wi-Fi
+                        6), <strong class="text-success">ARP</strong>, HDLC, RAPA, PPP, Frame Relay, ATM, X.75, V.120, CSMA/CD,
+                        CSMA/CA</td>
+                    <td>Token Ring, Ethernet, Bridge, Layer-2-Switch, Wireless Access Point</td>
+                    <td>Framefehler, Übertragungsfehler</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Bitübertragung</td>
+                    <td>FDDI, V.110, X.25, V.90, V.34, V.24, RS232, 100BaseTX, ISDN, RJ45, Coax, FM, AM, QAM, LWL</td>
+                    <td>Netzwerkkabel, Repeater, Hub, Modem</td>
+                    <td>Signalverlust, Übertragungsstörungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript: jQuery and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
