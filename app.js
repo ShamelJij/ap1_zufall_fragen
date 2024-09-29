@@ -1,4 +1,4 @@
-const jsonUrl = 'https://cdn.jsdelivr.net/gh/ShamelJij/itquiz_json@efbaa14/qanda.json';
+const jsonUrl = 'https://cdn.jsdelivr.net/gh/ShamelJij/itquiz_json@9e7095c/qanda.json';
 let quizData = []; // Store the fetched quiz data
 
 // Function to fetch JSON and initialize the display
